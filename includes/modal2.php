@@ -27,9 +27,9 @@
         <!--Body-->
         <p>Hello, user...</p>
         </br>
-        </br>
         <p>You don't have any active plan to access this book.</p>
-        <p>Please subcribe to our one of the best subscriptions plan.</p>
+        </br>
+        <p>Please subcribe to our one of the best subscription plans.</p>
         <p>...</p>
         <p>...</p>
 
