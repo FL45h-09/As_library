@@ -20,12 +20,9 @@
 <section class="text-gray-700 body-font overflow-hidden">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Subscription</h1>
+      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Subscription Plans</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The more you know, the smarter you grow..</p>
-      <div class="flex mx-auto border-2 border-blue-500 rounded overflow-hidden mt-6">
-        
-        <button class="py-1 px-4 focus:outline-none">Annually</button>
-      </div>
+      
     </div>
     <div class="flex flex-wrap -m-4">
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -59,7 +56,7 @@
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-gray-500 mt-3">We realized the best way to monetize content was through a subscription model.</p>
+          <p class="text-xs text-blue-500 mt-3">We realized the best way to monetize content was through a subscription model.</p>
         </div>
       </div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
