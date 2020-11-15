@@ -40,6 +40,6 @@
     </div>
   </div>
 
-  <script src="\js\modalBox.js">
+  <script src="\js\main.js">
     
   </script>
