@@ -56,7 +56,7 @@
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-          <p class="text-xs text-blue-500 mt-3">We realized the best way to monetize content was through a subscription model.</p>
+          <p class="text-xs text-gray-500 mt-3">We realized the best way to monetize content was through a subscription model.</p>
         </div>
       </div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
