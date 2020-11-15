@@ -1,5 +1,5 @@
 <?php
-    $subCheck = 1;
+    $subCheck = 0;
     $mod1 = 0;
 
     if($subCheck == 1)
