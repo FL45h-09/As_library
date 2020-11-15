@@ -1,7 +1,7 @@
   <section class="text-gray-700 body-font ">
     <div class="container px-5 py-20 mx-auto ">
       <div class="flex flex-wrap -m-4 ">
-      <div class="lg:w-1/6 md:w-1/2 sm:w-auto p-4 w-full ">
+      <div class="lg:w-1/6 md:w-1/2 sm:w-auto p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\avengers.jpg">
         </a>
@@ -128,4 +128,9 @@
       
     </div>
   </div>
+
+  <?php
+    include("includes/modal.php");
+  ?>
 </section>
+

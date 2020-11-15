@@ -40,3 +40,12 @@
   display: block;
   box-shadow: 0px -2px 10px 5px black;
 }
+
+/* This css is for modal box */
+.modal {
+      transition: opacity 0.25s ease;
+    }
+    body.modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important;
+    }
