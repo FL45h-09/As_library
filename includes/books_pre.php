@@ -1,3 +1,7 @@
+<?php
+  include("includes/sessions.php");
+?>  
+  
   <section class="text-gray-700 body-font ">
     <div class="container px-5 py-20 mx-auto ">
       <div class="flex flex-wrap -m-4 ">
@@ -131,7 +135,11 @@
 
 <!--The following include is to add modal in this page -->
   <?php
+    if($mod1 == 1){
     include("includes/modal.php");
+    }elseif($mod1 == 0){
+      include("includes/modal2.php");
+    }
   ?>
 <!--This is the JavaScript for the mpodal to work properly... -->
   <script src="\js\main.js"></script>

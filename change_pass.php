@@ -48,7 +48,7 @@
   </div>
 
   <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-            <button class="py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-indigo-600 transition duration-150 ease-in-out">
+            <button class="py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-500 shadow-sm hover:bg-blue-400 focus:outline-none focus:shadow-outline-blue active:bg-blue-500 transition duration-150 ease-in-out">
               Save
             </button>
           </div>
