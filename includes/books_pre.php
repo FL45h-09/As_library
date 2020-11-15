@@ -11,7 +11,7 @@
           
         </div>
       </div>
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\spidy.jpg">
         </a>
@@ -21,7 +21,7 @@
           
         </div>
       </div>
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\civil_war.jpg">
         </a>
@@ -31,7 +31,7 @@
           
         </div>
       </div>
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\captain_marvel.jpg">
         </a>
@@ -41,7 +41,7 @@
           
         </div>
       </div>
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a1.jpg">
         </a>
@@ -51,7 +51,7 @@
          
         </div>
       </div>
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a2.jpg">
         </a>
@@ -61,7 +61,7 @@
           
         </div>
       </div>
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a3.jpg">
         </a>
@@ -71,7 +71,7 @@
           
         </div>
       </div>
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a5.jpg">
         </a>
@@ -82,7 +82,7 @@
         </div>
       </div>
 
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a4.jpg">
         </a>
@@ -93,7 +93,7 @@
         </div>
       </div>
 
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open  ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a6.jpg">
         </a>
@@ -104,7 +104,7 @@
         </div>
       </div>
 
-      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open ">
+      <div class="lg:w-1/6 md:w-1/2 p-4 w-full modal-open">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a8.jpg">
         </a>
@@ -129,8 +129,12 @@
     </div>
   </div>
 
+<!--The following include is to add modal in this page -->
   <?php
     include("includes/modal.php");
   ?>
+<!--This is the JavaScript for the mpodal to work properly... -->
+  <script src="\js\main.js"></script>
+
 </section>
 
