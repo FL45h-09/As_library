@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    
+    <link rel="shortcut icon" href="/favicon.ico">
+
     <!-- Toggle Menu CSS -->
     <link rel="stylesheet" href="/css/sb_style.css">
     <link rel="stylesheet" href="/css/style.css">
