@@ -14,6 +14,7 @@
   <!-- Header starts here... -->
 <?php
     include("includes/header.php");
+    if(isset($_SESSION["user_n"])) {
 ?>
 
 <!-- Body starts here... -->
@@ -25,6 +26,7 @@
       
     </div>
     <div class="flex flex-wrap -m-4">
+          <!-- 1st card starts here -->
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
@@ -59,6 +61,8 @@
           <p class="text-xs text-gray-500 mt-3">We realized the best way to monetize content was through a subscription model.</p>
         </div>
       </div>
+          <!-- 2nd card starts here -->
+
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-blue-500 flex flex-col relative overflow-hidden">
           <span class="bg-blue-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
@@ -103,6 +107,8 @@
           <p class="text-xs text-gray-500 mt-3">We realized the best way to monetize content was through a subscription model.</p>
         </div>
       </div>
+      <!-- 3rd card starts here -->
+
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BUSINESS</h2>
@@ -153,6 +159,8 @@
           <p class="text-xs text-gray-500 mt-3">We realized the best way to monetize content was through a subscription model.</p>
         </div>
       </div>
+      <!-- 4rd card starts here -->
+
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">SPECIAL</h2>
@@ -210,7 +218,8 @@
 
 <!-- Footer starts here... -->
 <?php
-    include("includes/footer.php")
+    include("includes/footer.php");
+    }else header("Location:/login.php");
 ?>
 </body>
 </html>
