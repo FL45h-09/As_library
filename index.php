@@ -23,7 +23,7 @@
     include("includes/header.php");
     if(isset($_SESSION["user_n"])) {
 ?>
-<div class="container mx-auto flex flex-wrap grid grid-rows-1 bg-gray-500"> 
+<div class="container mx-auto flex flex-wrap grid grid-rows-1"> 
         <?php
             $a = 1;
             if( $a == 1)
