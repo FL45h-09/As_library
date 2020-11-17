@@ -1,5 +1,5 @@
  <?php
- /*
+ 
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -13,15 +13,14 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }else {echo "Connected successfully";}
 mysqli_close($conn);
-*/
+
 ?> 
 
 
 <?php
-
-
+/*
 $servername = "aslibrary.ga:3307";
-$username = "root1";
+$username = "root";
 $password = "Kalbatatahuna9";
 $database = "aslib";
 
@@ -34,5 +33,5 @@ if ($conn->connect_error) {
 }else {echo "Connected successfully";}
 mysqli_close($conn);
 
-
+*/
 ?>
