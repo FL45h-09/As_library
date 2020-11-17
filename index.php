@@ -23,19 +23,20 @@
     include("includes/header.php");
     if(isset($_SESSION["user_n"])) {
 ?>
-<div class="container mx-auto flex">
-<?php
-    $a = 5;
-    if( $a == 6)
-    {
-    include("includes/notify.php");
-    }
-    
-?>
-
-<?php
-   include("includes/searchbar.php");
-?>
+<div class="container mx-auto flex flex-wrap grid grid-rows-1 bg-gray-500"> 
+        <?php
+            $a = 1;
+            if( $a == 1)
+            {
+            include("includes/notify.php");
+            }
+            
+        ?>
+        
+        <?php
+        include("includes/searchbar.php");
+        ?>
+        
 
 <?php
    include("includes/books_pre.php");

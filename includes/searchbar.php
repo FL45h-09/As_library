@@ -2,7 +2,7 @@
 
 <!-- Search bar -->
 
-    <div class="p-1 mx-auto flex content-center mt-2">
+    <div class="p-1 mx-auto flex flex-wrap content-center mt-2">
     <form action="#" method="POST">
       <div class="bg-white border-2 flex items-center border-blue-500 rounded-full shadow-xl">
         <input class="rounded-l-full w-full py-1 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search">
