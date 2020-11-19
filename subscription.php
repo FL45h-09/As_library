@@ -27,6 +27,12 @@
     </div>
     <div class="flex flex-wrap -m-4">
           <!-- 1st card starts here -->
+          <?php
+            include('includes/sessions.php');
+            
+            if( $mod1 == 1)
+            { 
+          ?>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
@@ -61,6 +67,7 @@
           <p class="text-xs text-gray-500 mt-3">We realized the best way to monetize content was through a subscription model.</p>
         </div>
       </div>
+            <?php } ?>
           <!-- 2nd card starts here -->
 
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">

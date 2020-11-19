@@ -1,5 +1,5 @@
 <?php
-  include("includes/sessions.php");
+  //include("includes/sessions.php");
 ?>  
   
   <section class="text-gray-700 body-font ">

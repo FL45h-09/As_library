@@ -15,7 +15,7 @@
     $reslt = mysqli_query($conn, $sqlQ);
 
     while($row = mysqli_fetch_array($reslt)){
-      echo "<tr>"; 
+      echo "</br>"; 
             $dbpass = $row['passwd']; 
             //echo "2) From Database passwd: ".$dbpass."</br>";
             //var_dump($dbpass); 

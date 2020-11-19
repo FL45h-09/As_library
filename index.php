@@ -25,8 +25,9 @@
 ?>
 <div class="container mx-auto flex flex-wrap grid grid-rows-1"> 
         <?php
-            $a = 1;
-            if( $a == 1)
+            include('includes/sessions.php');
+            
+            if( $mod1 == 1)
             {
             include("includes/notify.php");
             }
