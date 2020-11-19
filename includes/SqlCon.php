@@ -2,7 +2,7 @@
  
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "Kalbatatahuna9";
 $database = "aslib";
 
 // Create connection
