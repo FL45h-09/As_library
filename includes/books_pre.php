@@ -135,9 +135,9 @@
 
 <!--The following include is to add modal in this page -->
   <?php
-    if($mod1 == 1){
+    if($mod2 == 1){
     include("includes/modal.php");
-    }elseif($mod1 == 0){
+    }elseif($mod2 == 0){
       include("includes/modal2.php");
     }
   ?>

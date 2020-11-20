@@ -3,6 +3,7 @@
     include('SqlCon.php');
 
     $mod1 = 0;
+    $mod2 = 1;
 
     if(isset($_SESSION["user_n"]))
     {
@@ -38,6 +39,11 @@
     if($months< 3)
     {
         $mod1 = 1;
+    }
+
+    if($months< 3)
+    {
+        $mod2 = 0;
     }
 
 ?>
