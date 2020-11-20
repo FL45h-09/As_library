@@ -5,6 +5,7 @@
     $cPass = hash('md5', $_POST["cPasswd"]);
     $nPass1 = hash('md5', $_POST["nPasswd1"]);
     $nPass2 = hash('md5', $_POST["nPasswd2"]);
+    $cUsr = $_SESSION["user_n"];
 
     if(count($_POST)>0)
     {
@@ -15,11 +16,13 @@
     while($row = mysqli_fetch_array($reslt)){
       
             $dbpass = $row['passwd'];
+            $dbusr = $row['userid']; 
     }
 
-    
-    if($cPass == $dbpass)
-    {
+    //check if current password is correct or not in database and its current user's.
+    if($cPass == $dbpass AND $cUsr == $dbusr)
+    {  
+        //Validate both new passwords
         if($nPass1 == $nPass2)
         {
             $sqlQ2 = "UPDATE users SET passwd = '$nPass2' WHERE passwd = '$cPass'";
