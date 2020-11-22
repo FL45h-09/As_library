@@ -1,22 +1,18 @@
 <?php
-    include('includes/SqlCon.php');
 
-    $sqlId = "SELECT * FROM users ORDER BY id DESC LIMIT 1";
+    $email = array("test", "test2", "test@example.com", "test2@example.com", "test392", "test@example.net", "vishal", "vishal@gmail.com");
 
-    $res = mysqli_query($conn, $sqlId);
-
-    while($row = mysqli_fetch_array($res)){
-        $id = $row['id'];
+    function checkEmail($email) {
+        $find1 = strpos($email, '@');
+        $find2 = strpos($email, '.');
+        return ($find1 !== false && $find2 !== false && $find2 > $find1);
     }
 
-    var_dump($id);
-    echo "</br>Converted to int: ";
-    $num = (int)$id;
-    var_dump($num);
-    echo "</br>Increment by 1: ";
-    $nxt = ++$num;
-    var_dump($nxt);
-    echo "</br>Increment by 1: ";
-    $nxt = ++$nxt;
-    var_dump($nxt);
+    echo "total array: ".count($email)."</br>";
+
+    foreach($email as $value){
+        if ( checkEmail($value) ) {
+            echo $value . ' ( looks like a valid email address.)'."</br>";
+        }
+    }
 ?>
