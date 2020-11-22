@@ -23,8 +23,8 @@
       <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Log in</h2>
       <form name="login_frm" method="POST" action="includes\verify.php">
 
-      <input name="u_name" class="bg-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base px-4 py-2 mb-4" placeholder="User id / Email" type="text">
-      <input name="u_pass" class="bg-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base px-4 py-2 mb-4" placeholder="Password" type="password">
+      <input name="u_name" class="bg-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base px-4 py-2 mb-4" placeholder="User id / Email" type="text" required>
+      <input name="u_pass" class="bg-white rounded border border-gray-400 focus:outline-none focus:border-blue-500 text-base px-4 py-2 mb-4" placeholder="Password" type="password" required>
       <?php
         if(isset($_SESSION["error"]))
         {

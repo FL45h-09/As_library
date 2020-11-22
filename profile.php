@@ -32,56 +32,51 @@
       </div>
     </div>
     <div class="mt-5 md:mt-0 md:col-span-2">
-      <form action="#" method="POST">
+      <form action="save_prof.php" method="POST">
         <div class="shadow overflow-hidden sm:rounded-md">
           <div class="px-4 py-5 bg-white sm:p-6">
             <div class="grid grid-cols-6 gap-6">
               <div class="col-span-6 sm:col-span-3">
                 <label for="first_name" class="block text-sm font-medium leading-5 text-gray-700">First name</label>
-                <input id="first_name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="John">
+                <input id="first_name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="John" required>
               </div>
 
               <div class="col-span-6 sm:col-span-3">
                 <label for="last_name" class="block text-sm font-medium leading-5 text-gray-700">Last name</label>
-                <input id="last_name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Wick">
+                <input id="last_name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Wick"  required>
               </div>
 
               <div class="col-span-6 sm:col-span-3">
                 <label for="email_address" class="block  text-sm font-medium leading-5 text-gray-700">Email address</label>
-                <input id="email_address" type="email" autocomplete="on"  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="john@example.com">
+                <input id="email_address" type="email" autocomplete="on"  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="john@example.com"  required>
               </div>
 
               <div class="col-span-6 sm:col-span-3">
                 <label for="country" class="block text-sm font-medium leading-5 text-gray-700">Country / Region</label>
-                <select id="country" default="India" class="mt-1 block form-select w-full py-3 px-4 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5">
-                  <option value="none" selected disabled hidden>Select Country</option> 
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
-                  <option>India</option>
-                  <option>South Africa</option>
+                <select id="country" name="country" class="mt-1 block form-select w-full py-3 px-4 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"  required>
+                  <?php include("includes/countries.php"); ?>
                 </select>
               </div>
 
               <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                 <label for="city" class="block text-sm font-medium leading-5 text-gray-700">City</label>
-                <input id="city" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Mumbai">
+                <input id="city" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Mumbai" required>
               </div>
 
               <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                 <label for="state" class="block text-sm font-medium leading-5 text-gray-700">State / Province</label>
-                <input id="state" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Maharashtra">
+                <input id="state" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Maharashtra"  required>
               </div>
 
               <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                 <label for="postal_code" class="block text-sm font-medium leading-5 text-gray-700">ZIP / Postal</label>
-                <input id="postal_code" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="400100">
+                <input id="postal_code" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="400100"  required>
               </div>
 
               <div class="col-span-6 sm:col-span-4">
                     <label for="street_address" class="block text-sm font-medium leading-5 text-gray-700">Street address
                     </label>
-                    <textarea rows="3" cols="10" id="street_address" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Address"></textarea>
+                    <textarea rows="3" cols="10" id="street_address" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Address"  required></textarea>
               </div>
 
             </div>

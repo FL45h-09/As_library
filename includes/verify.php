@@ -5,8 +5,8 @@
     $usrID = $_POST["u_name"];
     $passwd = hash('md5', $_POST["u_pass"]);
 
-    if(count($_POST)>0)
-    {
+        if(count($_POST)>0)
+        {
         $sqlQ = "SELECT * FROM users WHERE userid = '$usrID'";
 
     $reslt = mysqli_query($conn, $sqlQ);
@@ -23,6 +23,7 @@
 
         if(isset($_SESSION["user_n"]))
         {
+            $conn->close();
             header("Location:/index.php");
         }
     }

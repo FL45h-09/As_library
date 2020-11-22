@@ -27,7 +27,7 @@
         {
             $sqlQ2 = "UPDATE users SET passwd = '$nPass2' WHERE passwd = '$cPass'";
             mysqli_query($conn, $sqlQ2);
-            
+            $conn->close();
             header("Location:/logout.php");
         }else
         {

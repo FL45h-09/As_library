@@ -1,14 +1,22 @@
-<center>
-<form action="test.php" method="post">
-<input type="text" name="t1" placeholder="User Name"></br>
-<input type="password" name="p1" placeholder="Password">
-</br>
-</br>
-<input type="submit" value="Login">
-</form>
+<?php
+    include('includes/SqlCon.php');
 
-</br>
-</br>
+    $sqlId = "SELECT * FROM users ORDER BY id DESC LIMIT 1";
 
+    $res = mysqli_query($conn, $sqlId);
 
-</center>
+    while($row = mysqli_fetch_array($res)){
+        $id = $row['id'];
+    }
+
+    var_dump($id);
+    echo "</br>Converted to int: ";
+    $num = (int)$id;
+    var_dump($num);
+    echo "</br>Increment by 1: ";
+    $nxt = ++$num;
+    var_dump($nxt);
+    echo "</br>Increment by 1: ";
+    $nxt = ++$nxt;
+    var_dump($nxt);
+?>

@@ -29,20 +29,29 @@
       <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign up</h2>
       
       <div class="rounded text-black w-full items-center">
+
+        <form method="POST" action="/includes/signUP.php">
                     
-                    <input type="text" class="appearance-none block w-1/2 bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 float-left leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="fullname" placeholder="First Name" />
-                    <input type="text" class="appearance-none block w-1/2 bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="fullname" placeholder="Last Name" />
+                    <input type="text" class="appearance-none block w-1/2 bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 float-left leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="fname" placeholder="First Name" required />
 
-                    <input type="text" class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="email" placeholder="Email" />
+                    <input type="text" class="appearance-none block w-1/2 bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="lname" placeholder="Last Name" required />
 
-                    <input type="date" class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="dob" placeholder="Date of birth" />
+                    <input type="text" class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="email" placeholder="Email" required />
 
-                    <input type="password" class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="password" placeholder="Password" />
-                    <input 
-                        type="password"
-                        class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        name="confirm_password"
-                        placeholder="Confirm Password" />
+                    <input type="text" class="appearance-none block w-1/2 bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 float-left leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="uname" placeholder="User Id" required />
+
+                    <input type="date" class="appearance-none block w-1/2 bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="dob" placeholder="Date of birth" required />
+
+                    <input type="password" class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="passwd" placeholder="Password" required />
+                    <input type="password" class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="passwd2" placeholder="Confirm Password" required />
+
+                    <?php
+                          if(isset($_SESSION["error"]))
+                          {
+                            include("includes/error.php");
+                            unset($_SESSION["error"]);
+                          }
+                    ?>
 
                     <button
                         type="submit"
@@ -59,6 +68,7 @@
                         </a>
                     </div>
                 </div>
+                </form>
 
                 <div class="items-center text-sm mx-auto text-grey-700 mt-3">
                     Already have an account? 
@@ -66,6 +76,7 @@
                        <u> Log in </u>
                     </a>.
                 </div>
+                
       </div>
     </div>
   </div>
