@@ -38,13 +38,13 @@
         //following query is to grab the userid from data base to check if it exist of not.
         $sqlQ = "SELECT * FROM users WHERE userid = '$usrid'";
         $sqlQ1 = "INSERT INTO users (id, userid, email, passwd, regDate) VALUES ('$nextId', '$usrid', '$email', '$passwd2', '$todatD');";
+
         $sqlQ1 .= "INSERT INTO userdtls (srNo, userid, FName, LName, DoB) VALUES ('$nextId', '$usrid', '$fname', '$lname', '$dob');";
 
         $reslt = mysqli_query($conn, $sqlQ);
         $dbusr = "";
         while($row = mysqli_fetch_array($reslt)){
-            $dbusr = $row['userid']; 
-            var_dump($dbusr);
+            $dbusr = $row['userid'];
         }
 
         
