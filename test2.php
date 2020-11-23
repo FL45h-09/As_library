@@ -24,5 +24,6 @@
     } else {
         echo("</br>$value is not a valid email address");
     }
+    
     }
 ?>
