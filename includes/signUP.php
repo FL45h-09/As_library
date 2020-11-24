@@ -68,7 +68,7 @@
 
         if($passwd == $passwd2){
            if (mysqli_query($conn, $sqlQ2) && mysqli_query($conn, $sqlQ3)) {
-            $_SESSION["error"] = "You have successfully created account.";
+            $_SESSION["error3"] = "You have successfully signed up.";
             $conn->close();
             header("Location:/login.php");
             } else{
