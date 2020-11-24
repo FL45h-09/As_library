@@ -37,9 +37,10 @@
         
         //following query is to grab the userid from data base to check if it exist of not.
         $sqlQ = "SELECT * FROM users WHERE userid = '$usrid'";
-        $sqlQ1 = "INSERT INTO users (id, userid, email, passwd, regDate) VALUES ('$nextId', '$usrid', '$email', '$passwd2', '$todatD');";
+        $sqlQ1 = "SELECT * FROM users WHERE email = '$email'";
+        $sqlQ2 = "INSERT INTO users (id, userid, email, passwd, regDate) VALUES ('$nextId', '$usrid', '$email', '$passwd2', '$todatD');";
 
-        $sqlQ1 .= "INSERT INTO userdtls (srNo, userid, FName, LName, DoB) VALUES ('$nextId', '$usrid', '$fname', '$lname', '$dob');";
+        $sqlQ3 = "INSERT INTO userdtls (srNo, userid, FName, LName, DoB) VALUES ('$nextId', '$usrid', '$fname', '$lname', '$dob');";
 
         $reslt = mysqli_query($conn, $sqlQ);
         $dbusr = "";
@@ -54,13 +55,25 @@
             header("Location:/signup.php");
         }
 
+        $reslt = mysqli_query($conn, $sqlQ1);
+        $dbmail = "";
+        while($row = mysqli_fetch_array($reslt)){
+            $dbmail = $row['email'];
+        }
+
+        if($email == $dbmail){
+            $_SESSION["error"] = "Please select different Email.";
+            header("Location:/signup.php");
+        }
+
         if($passwd == $passwd2){
-           if ($conn->multi_query($sqlQ1) === TRUE) {
+           if (mysqli_query($conn, $sqlQ2) && mysqli_query($conn, $sqlQ3)) {
             $_SESSION["error"] = "You have successfully created account.";
             $conn->close();
             header("Location:/login.php");
-            } else {
+            } else{
             echo "Error: " . $sqlQ1 . "<br>" . $conn->error;
+            echo "Error: " . $sqlQ2 . "<br>" . $conn->error;
             }
         }
         else{
