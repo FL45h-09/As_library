@@ -3,7 +3,7 @@
     include('SqlCon.php');
     
     if (isset($_SESSION["user_n"])) {
-        $uname = $_SESSION["user_n"];
+        $usrid = $_SESSION["user_n"];
     }
 
     //Define variables.
@@ -23,10 +23,11 @@ if (count($_POST) > 0) {
     $fname = sanitize_input($_POST['fname']);
     $lname = sanitize_input($_POST['lname']);
     $email = sanitize_input($_POST['email']);
-    $usrid = sanitize_input($_POST['uname']);
-    $dob = sanitize_input($_POST['dob']);
-    $passwd = hash('md5', $_POST['passwd']);
-    $passwd2 = hash('md5', $_POST['passwd2']);
+    $country = sanitize_input($_POST['country']);
+    $city = sanitize_input($_POST['city']);
+    $state = sanitize_input($_POST['state']);
+    $zip = sanitize_input($_POST['zip']);
+    $street = sanitize_input($_POST['street']);
     //Take the curent date and store it into the variable.
     $todatD = date("Y/m/d");
     // The following quuery is to get the last id. 
@@ -42,10 +43,7 @@ if (count($_POST) > 0) {
 
     //following query is to grab the userid from data base to check if it exist of not.
     $sqlQ = "SELECT * FROM users WHERE userid = '$usrid'";
-    $sqlQ1 = "SELECT * FROM users WHERE email = '$email'";
-    $sqlQ2 = "INSERT INTO users (id, userid, email, passwd, regDate) VALUES ('$nextId', '$usrid', '$email', '$passwd2', '$todatD');";
-
-    $sqlQ3 = "INSERT INTO userdtls (srNo, userid, FName, LName, DoB) VALUES ('$nextId', '$usrid', '$fname', '$lname', '$dob');";
+    
 
     echo "File is under construction... please bare with us...";
 }

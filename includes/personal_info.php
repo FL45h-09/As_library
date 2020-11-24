@@ -1,16 +1,7 @@
 <?php
     include('SqlCon.php');
-    $dbmail =  "";
-    $dbusr = "";
-    $dbfname = "";
-    $dblname = "";
-    $dbNo = "";
-    $dbDoB = "";
-    $dbcity = "";
-    $dbstate = "";
-    $dbcountry = "";
-    $dbZip = "";
-    $dbstreet = "";
+    //Define variables.
+    $dbmail = $dbusr = $dbfname = $dblname = $dbNo = $dbDoB = $dbcity = $dbstate = $dbcountry = $dbZip = $dbstreet = "";
 
 
     if (isset($_SESSION["user_n"])) {
