@@ -47,43 +47,7 @@ if (count($_POST) > 0) {
 
     $sqlQ3 = "INSERT INTO userdtls (srNo, userid, FName, LName, DoB) VALUES ('$nextId', '$usrid', '$fname', '$lname', '$dob');";
 
-    $reslt = mysqli_query($conn, $sqlQ);
-    $dbusr = "";
-    while ($row = mysqli_fetch_array($reslt)) {
-        $dbusr = $row['userid'];
-    }
-
-
-    if ($usrid == $dbusr) {
-
-        $_SESSION["error"] = "Please select different User ID.";
-        header("Location:/signup.php");
-    }
-
-    $reslt = mysqli_query($conn, $sqlQ1);
-    $dbmail = "";
-    while ($row = mysqli_fetch_array($reslt)) {
-        $dbmail = $row['email'];
-    }
-
-    if ($email == $dbmail) {
-        $_SESSION["error"] = "Please select different Email.";
-        header("Location:/signup.php");
-    }
-
-    if ($passwd == $passwd2) {
-        if (mysqli_query($conn, $sqlQ2) && mysqli_query($conn, $sqlQ3)) {
-            $_SESSION["error3"] = "You have successfully signed up.";
-            $conn->close();
-            header("Location:/login.php");
-        } else {
-            echo "Error: " . $sqlQ2 . "<br>" . $conn->error;
-            echo "Error: " . $sqlQ3 . "<br>" . $conn->error;
-        }
-    } else {
-        $_SESSION["error"] = "Passwords not matching.";
-        header("Location:/signup.php");
-    }
+    echo "File is under construction... please bare with us...";
 }
 
 ?>
