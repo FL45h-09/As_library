@@ -72,8 +72,8 @@
             $conn->close();
             header("Location:/login.php");
             } else{
-            echo "Error: " . $sqlQ1 . "<br>" . $conn->error;
             echo "Error: " . $sqlQ2 . "<br>" . $conn->error;
+            echo "Error: " . $sqlQ3 . "<br>" . $conn->error;
             }
         }
         else{
