@@ -37,3 +37,9 @@ function toggleModal() {
     modal.classList.toggle('pointer-events-none')
     body.classList.toggle('modal-active')
 }
+
+//Following function is to redirect from profile to edit profile.
+function editProfile(){
+    window.location.href = "includes/profile_edit.php";
+
+}
