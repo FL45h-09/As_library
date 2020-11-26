@@ -1,7 +1,9 @@
 <?php
     include('SqlCon.php');
     //Define variables.
-    $dbmail = $dbusr = $dbfname = $dblname = $dbNo = $dbDoB = $dbcity = $dbstate = $dbcountry = $dbZip = $dbstreet = "";
+    $dbmail = $dbusr = $dbfname = $dblname = $dbNo = $dbDoB = $dbcity = $dbstate = $dbZip = $dbstreet = "";
+
+    $dbcountry = "Select Country";
 
 
     if (isset($_SESSION["user_n"])) {
@@ -24,6 +26,10 @@
             $dbcity = $row1['city'];
             $dbstate = $row1['state'];
             $dbcountry = $row1['country'];
+            if($dbcountry == "")
+            {
+                $dbcountry = "Select Country";
+            }
             $dbZip = $row1['zip'];
             $dbstreet = $row1['street'];
         }

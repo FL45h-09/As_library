@@ -46,30 +46,8 @@
 				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div> -->
 
 							<h1 class="text-3xl text-blue-500 font-bold pt-8 lg:pt-0"> <?php echo $dbfname . " " . $dblname; ?></h1>
-							<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
-							<p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
-								Full Name: <?php echo $dbfname . " " . $dblname; ?></br>
-								User Id : <?php echo $dbusr; ?></br>
-								Email : <?php echo $dbmail; ?></br>
-								Contact : <?php echo $dbNo; ?></br>
-								Date of birth : <?php echo $dbDoB; ?></br>
-								Street : <?php echo $dbstreet; ?></br>
-								City : <?php echo $dbcity; ?></br>
-								State : <?php echo $dbstate; ?></br>
-								Country : <?php echo $dbcountry; ?></br>
-								Pincode : <?php echo $dbZip; ?></br>
-
-
-							</p>
-
-							<p class="pt-8 text-sm">Totally optional short description about yourself, what you do and so on.</p>
-
-							<div class="pt-12 pb-8">
-								<button onclick="editProfile()" id="edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-									Edit Profile
-								</button>
-							</div>
-
+							<div class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25"></div>
+							<?php include("includes/profile_info.php"); ?>
 
 
 							<!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
