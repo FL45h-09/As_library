@@ -89,7 +89,7 @@
                             </div>
                         </td>
                         <td class="px-5 py-3 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbDoB; ?></p>
+                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $for_DoB; ?></p>
                         </td>
                     </tr>
 

@@ -23,6 +23,7 @@
             $dblname = $row1['LName'];
             $dbNo = $row1['contact'];
             $dbDoB = $row1['DoB'];
+            $for_DoB = date_format(date_create($dbDoB), "d-M-Y");
             $dbcity = $row1['city'];
             $dbstate = $row1['state'];
             $dbcountry = $row1['country'];
