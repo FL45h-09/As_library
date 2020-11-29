@@ -49,3 +49,15 @@
       overflow-x: hidden;
       overflow-y: visible !important;
     }
+
+.notify{
+  display: block;
+}
+
+.notify:hover{
+  box-shadow: -7px 7px 25px gray;
+}
+
+.searchbar:hover{
+  box-shadow: -7px 7px 18px 1px gray;
+}
