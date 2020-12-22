@@ -7,7 +7,7 @@
     <div class="flex flex-wrap -m-4 ">
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\avengers.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a11.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -17,7 +17,7 @@
       </div>
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\spidy.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a13.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -27,7 +27,7 @@
       </div>
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\civil_war.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a14.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -37,7 +37,7 @@
       </div>
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\captain_marvel.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a12.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -47,7 +47,7 @@
       </div>
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a1.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a1.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -57,7 +57,7 @@
       </div>
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a2.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a2.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -67,7 +67,7 @@
       </div>
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a3.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a3.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -77,7 +77,7 @@
       </div>
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a5.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a5.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -88,7 +88,7 @@
 
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a4.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a4.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -99,7 +99,7 @@
 
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a6.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a6.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -110,7 +110,7 @@
 
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a8.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a8.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
@@ -121,7 +121,7 @@
 
       <div class="lg:w-1/6 md:w-1/2 p-4 w-full">
         <a href="#" class="block relative h-48 rounded overflow-hidden border-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl hover:scale-110 modal-open">
-          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\a10.jpg">
+          <img alt="Book" class="object-cover object-center w-full h-full block" src="\imgs\books\a10.jpg">
         </a>
         <div class="mt-4">
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
