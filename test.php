@@ -20,7 +20,7 @@
   foreach ($books as $value) {
     $bid = "B".$value;
     echo $value . "<br>"; // Print the array.
-    $sqlQ = "UPDATE books SET id= 0 WHERE Bid= '$bid'"; // update the id from the books table.
+    $sqlQ = "UPDATE books SET id= $value WHERE Bid= '$bid'"; // update the id from the books table.
 
     if ($conn->query($sqlQ) === TRUE) {
       echo "New record created successfully." . "<br>";
