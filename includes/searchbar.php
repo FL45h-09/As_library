@@ -3,7 +3,7 @@
 <div class="p-1 mx-auto flex flex-wrap content-center mt-2">
   <form action="#" method="POST">
     <div class="bg-white border-2 flex items-center border-blue-500 rounded-full transition duration-500 ease-in-out searchbar">
-      <input class="rounded-l-full w-full py-1 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search">
+      <input name="searchBar" class="rounded-l-full w-full py-1 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search">
 
       <div class="p-1">
         <button class="bg-blue-500 text-white rounded-full p-0 hover:bg-blue-400 focus:outline-none w-6 h-6 flex items-center justify-center">
