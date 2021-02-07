@@ -17,35 +17,31 @@
         return $data;
     }
 
-if (count($_POST) > 0) {
-
+    if (count($_POST) > 0){
     //Take all the post data and store it in to the variables.
     $fname = sanitize_input($_POST['fname']);
     $lname = sanitize_input($_POST['lname']);
+    $Dob = $_POST['dob'];
     $email = sanitize_input($_POST['email']);
     $country = sanitize_input($_POST['country']);
     $city = sanitize_input($_POST['city']);
     $state = sanitize_input($_POST['state']);
     $zip = sanitize_input($_POST['zip']);
     $street = sanitize_input($_POST['street']);
-    //Take the curent date and store it into the variable.
-    $todatD = date("Y/m/d");
     // The following quuery is to get the last id. 
-    $sqlId = "SELECT * FROM users ORDER BY id DESC LIMIT 1";
-    $res = mysqli_query($conn, $sqlId);
+        $sqlfn = "SELECT * FROM userdtls WHERE userid = '$usrid'";
+    $res = mysqli_query($conn, $sqlfn);
     while ($row = mysqli_fetch_array($res)) {
-        $id = $row['id'];
+        $fnm = $row['FName'];
     }
 
-    //Take the last id convert it into integer and increment it by 1.
-    $LastId = (int)$id;
-    $nextId = ++$LastId;
+    if($fnm == $fname)
+    {
+        $sqlUpdate = "UPDATE userdtls SET FName = '$fname', LName = '$lname', DoB = '$Dob', city = '$city', states = '$state', country = '$country', zip = '$zip', street = '$street' WHERE userid = '$usrid'";
+        $sqlUpdate1 = "UPDATE users SET email = '$email'";
 
-    //following query is to grab the userid from data base to check if it exist of not.
-    $sqlQ = "SELECT * FROM users WHERE userid = '$usrid'";
-    
-
-    echo "File is under construction... please bare with us...";
+        echo "Your profile is updated...";
+    }
 }
 
 ?>

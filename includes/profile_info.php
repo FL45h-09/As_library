@@ -193,7 +193,7 @@
                                 <div class="ml-3">
 
                                     <p class="text-gray-900 whitespace-no-wrap">
-                                        <button onclick="editProfile()" id="edit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                        <button onclick="editProfile()" id="edit" class="bg-indigo-600 shadow-sm hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded-full">
                                             Edit Profile
                                         </button>
                                     </p>

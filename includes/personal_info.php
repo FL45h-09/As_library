@@ -25,7 +25,7 @@
             $dbDoB = $row1['DoB'];
             $for_DoB = date_format(date_create($dbDoB), "d-M-Y");
             $dbcity = $row1['city'];
-            $dbstate = $row1['state'];
+            $dbstate = $row1['states'];
             $dbcountry = $row1['country'];
             if($dbcountry == "")
             {

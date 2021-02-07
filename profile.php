@@ -41,25 +41,14 @@
 				<div class="md:mt-0 md:col-span-2">
 					<div class=" overflow-hidden sm:rounded-md">
 						<div class="px-4 py-5 bg-white sm:p-6">
-							<!-- Image for mobile view-->
-							<!--
-				<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div> -->
 
 							<h1 class="text-3xl text-blue-500 font-bold pt-8 lg:pt-0"> <?php echo $dbfname . " " . $dblname; ?></h1>
 							<div class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25"></div>
 							<?php include("includes/profile_info.php"); ?>
 
-
-							<!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
 						</div>
 					</div>
 				</div>
-
-				<!-- Pin to top right corner 
-		<div class="absolute top-0 right-0 h-12 w-18 p-4">
-			<button class="js-change-theme focus:outline-none">🌙</button>
-		</div> -->
-
 			</div>
 		</div>
 		</div>
@@ -67,36 +56,6 @@
 
 		<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
 		<script src="https://unpkg.com/tippy.js@4"></script>
-		<script>
-			//Init tooltips
-			tippy('.link', {
-				placement: 'bottom'
-			})
-
-			//Toggle mode
-			const toggle = document.querySelector('.js-change-theme');
-			const body = document.querySelector('body');
-			const profile = document.getElementById('profile');
-
-
-			toggle.addEventListener('click', () => {
-
-				if (body.classList.contains('text-gray-900')) {
-					toggle.innerHTML = "☀️";
-					body.classList.remove('text-gray-900');
-					body.classList.add('text-gray-100');
-					profile.classList.remove('bg-white');
-					profile.classList.add('bg-gray-900');
-				} else {
-					toggle.innerHTML = "🌙";
-					body.classList.remove('text-gray-100');
-					body.classList.add('text-gray-900');
-					profile.classList.remove('bg-gray-900');
-					profile.classList.add('bg-white');
-
-				}
-			});
-		</script>
 
 	<?php
 		include("includes/footer.php");
