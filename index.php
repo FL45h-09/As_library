@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     <!-- Toggle Menu CSS -->
-    <link rel="stylesheet" href="/css/sb_style.css">
     <link rel="stylesheet" href="/css/style.css">
     
     <title>Library</title>

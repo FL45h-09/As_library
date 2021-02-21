@@ -39,11 +39,11 @@ if (isset($_SESSION["user_n"])) {
 
       <!-- Right   side starts here-->
       <div class="mt-10 md:mt-0 md:col-span-2">
-        <form action="update_prof.php" method="POST">
+        <form action="./update_prof.php" method="POST">
           <div class=" overflow-hidden sm:rounded-md">
             <div class="px-4 py-5 bg-white sm:p-6">
               <div class="grid grid-cols-6 gap-6">
-              
+
                 <div class="col-span-6 sm:col-span-3">
                   <label for="first_name" class="block text-sm font-medium leading-5 text-gray-700">First name</label>
                   <input value="<?php echo $dbfname; ?>" id="first_name" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="John" name="fname" required readonly>
@@ -99,9 +99,10 @@ if (isset($_SESSION["user_n"])) {
               <input onclick="javascript:window.location='../profile.php';" type="button" class="py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-indigo-600 transition duration-150 ease-in-out cursor-pointer" value="Cancle"> &nbsp;&nbsp;
 
 
-              <button class="py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-indigo-600 transition duration-150 ease-in-out">
+              <button onclick="return confirm('Are you sure you want to save?');" class="py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-indigo-600 transition duration-150 ease-in-out">
                 Save
               </button>
+
             </div>
           </div>
         </form>

@@ -25,7 +25,7 @@
           $searchQ = $_POST["searchBar"];
           $Sq1Q = "SELECT * FROM books WHERE Bname LIKE '%$searchQ%'";
           $result1 = mysqli_query($conn, $Sq1Q);
-        
+          
           while($row = mysqli_fetch_array($result1)){
 
           $BID = $row['Bid'];

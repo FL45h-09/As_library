@@ -18,7 +18,7 @@
     }
 
     if (count($_POST) > 0){
-    //Take all the post data and store it in to the variables.
+    //Take all the post data and store it in to the variables. And sanitise them using the function above.
     $fname = sanitize_input($_POST['fname']);
     $lname = sanitize_input($_POST['lname']);
     $Dob = $_POST['dob'];
@@ -28,8 +28,9 @@
     $state = sanitize_input($_POST['state']);
     $zip = sanitize_input($_POST['zip']);
     $street = sanitize_input($_POST['street']);
-    // The following quuery is to get the last id. 
-        $sqlfn = "SELECT * FROM userdtls WHERE userid = '$usrid'";
+
+        //Follwong quesry gets the userid from database.
+    $sqlfn = "SELECT * FROM userdtls WHERE userid = '$usrid'";
     $res = mysqli_query($conn, $sqlfn);
     while ($row = mysqli_fetch_array($res)) {
         $fnm = $row['FName'];
@@ -40,8 +41,12 @@
         $sqlUpdate = "UPDATE userdtls SET FName = '$fname', LName = '$lname', DoB = '$Dob', city = '$city', states = '$state', country = '$country', zip = '$zip', street = '$street' WHERE userid = '$usrid'";
         $sqlUpdate1 = "UPDATE users SET email = '$email'";
 
-        echo "Your profile is updated...";
+        mysqli_query($conn, $sqlUpdate);
+        mysqli_query($conn, $sqlUpdate1);
+        
+        header("Location:../profile.php");
+        die();
+        
     }
 }
-
 ?>
