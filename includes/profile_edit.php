@@ -10,7 +10,7 @@
   <!-- Toggle Menu CSS -->
 
   <link rel="stylesheet" href="/css/style.css">
-  <title>Library</title>
+  <title>Library|Profile</title>
 </head>
 
 <!-- Header starts here... -->

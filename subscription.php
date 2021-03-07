@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <!-- Toggle Menu CSS -->
   <link rel="stylesheet" href="/css/style.css">
-  <title>Library</title>
+  <title>Library|Subscription</title>
 </head>
 
 <body>
@@ -60,7 +60,7 @@
                     </svg>
                   </span>No acess to exclusive books.
                 </p>
-                <button class="flex items-center mt-auto text-white bg-gray-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-600 rounded">Subscribe
+                <button class="flex items-center mt-auto text-white bg-gray-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-600 rounded" name="free">Subscribe
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>

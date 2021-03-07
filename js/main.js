@@ -43,3 +43,5 @@ function editProfile(){
     window.location.href = "includes/profile_edit.php";
 
 }
+
+
