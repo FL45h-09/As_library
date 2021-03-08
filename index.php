@@ -19,33 +19,33 @@
 <body class="content-center justify-items-auto items-center">
 
 <?php
-    include("includes/header.php");
+    include("extra/header.php");
     if(isset($_SESSION["user_n"])) {
 ?>
 <div class="container mx-auto flex flex-wrap grid grid-rows-1"> 
         <?php
-            include('includes/sessions.php');
+            include('extra/sessions.php');
             
             if( $mod1 == 1)
             {
-            include("includes/notify.php");
+            include("extra/notify.php");
             }
             
         ?>
         
         <?php
-        include("includes/searchbar.php");
+        include("extra/searchbar.php");
         ?>
         
 
 <?php
-   include("includes/books_pre.php");
+   include("extra/books_pre.php");
 ?>
 
 </div>
 
 <?php
-    include("includes/footer.php");
+    include("extra/footer.php");
     }else header("Location:/login.php");
 ?>
 </body>

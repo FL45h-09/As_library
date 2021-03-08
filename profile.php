@@ -18,8 +18,8 @@
 <body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
 
 	<?php
-	include("includes/header.php");
-	include("includes/personal_info.php");
+	include("extra/header.php");
+	include("extra/personal_info.php");
 	if (isset($_SESSION["user_n"])) {
 	?>
 
@@ -43,7 +43,7 @@
 
 							<h1 class="text-3xl text-blue-500 font-bold pt-8 lg:pt-0"> <?php echo $dbfname . " " . $dblname; ?></h1>
 							<div class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25"></div>
-							<?php include("includes/profile_info.php"); ?>
+							<?php include("extra/profile_info.php"); ?>
 
 						</div>
 					</div>
@@ -57,7 +57,7 @@
 		<script src="https://unpkg.com/tippy.js@4"></script>
 
 	<?php
-		include("includes/footer.php");
+		include("extra/footer.php");
 	} else header("Location:/login.php");
 	?>
 </body>

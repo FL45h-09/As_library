@@ -15,7 +15,7 @@
 
     <!-- Header starts here... -->
     <?php
-    include("includes/header.php");
+    include("extra/header.php");
     if (isset($_SESSION["user_n"])) {
     ?>
 
@@ -30,7 +30,7 @@
                 <div class="flex flex-wrap -m-4">
                     <!-- 1st card starts here -->
                     <?php
-                    include('includes/sessions.php');
+                    include('extra/sessions.php');
 
                     if ($mod1 == 1) {
                     ?>
@@ -226,7 +226,7 @@
 
         <!-- Footer starts here... -->
     <?php
-        include("includes/footer.php");
+        include("extra/footer.php");
     } else header("Location:/login.php");
     ?>
 </body>

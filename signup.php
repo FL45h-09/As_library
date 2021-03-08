@@ -10,7 +10,7 @@
 
 
 <?php
-    include("includes/header.php");
+    include("extra/header.php");
     if(isset($_SESSION["user_n"])) {
     unset($_SESSION["user_n"]);
     header("Refresh:0");
@@ -30,7 +30,7 @@
       
       <div class="rounded text-black w-full items-center">
 
-        <form method="POST" action="/includes/signUP.php">
+        <form method="POST" action="/extra/signUP.php">
                     
                     <input type="text" class="appearance-none block w-1/2 bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 float-left leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="fname" placeholder="First Name" required />
 
@@ -48,7 +48,7 @@
                     <?php
                           if(isset($_SESSION["error"]))
                           {
-                            include("includes/error.php");
+                            include("extra/error.php");
                             unset($_SESSION["error"]);
                           }
                     ?>
@@ -86,7 +86,7 @@
 </br></br>
 
 <?php
-    include("includes/footer.php")
+    include("extra/footer.php")
 ?>
 </body>
 </html>

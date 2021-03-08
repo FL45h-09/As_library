@@ -13,14 +13,14 @@
  
 <!-- Header starts here... -->
 <?php
-    include("includes/header.php");
+    include("extra/header.php");
     if(isset($_SESSION["user_n"])) {
 ?>
 
 <!-- Body starts here... -->
 
 <div class="container mx-auto px-8 my-8 md:flex h-screen items-center justify-center">
-<form method="POST" action="/includes/changeP.php" class="w-full max-w-lg">
+<form method="POST" action="/extra/changeP.php" class="w-full max-w-lg">
 
 <div class="flex flex-wrap -mx-3 mb-6">
     <div class="w-full px-3">
@@ -31,7 +31,7 @@
       <?php
         if(isset($_SESSION["error"]))
         {
-          include("includes/error.php");
+          include("extra/error.php");
           unset($_SESSION["error"]);
         }else{echo '<p class="text-gray-600 text-xs italic">Please type your current password.</p>';}
       ?>
@@ -57,7 +57,7 @@
      <?php
         if(isset($_SESSION["error2"]))
         {
-          include("includes/error.php");
+          include("extra/error.php");
           unset($_SESSION["error2"]);
         }
       ?>
@@ -77,7 +77,7 @@
 <!-- Footer starts here... -->
 
 <?php
-    include("includes/footer.php");
+    include("extra/footer.php");
     }else header("Location:/as_lib/login.php");
 ?>
 

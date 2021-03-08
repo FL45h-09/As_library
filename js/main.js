@@ -40,7 +40,7 @@ function toggleModal() {
 
 //Following function is to redirect from profile to edit profile.
 function editProfile(){
-    window.location.href = "includes/profile_edit.php";
+    window.location.href = "extra/profile_edit.php";
 
 }
 

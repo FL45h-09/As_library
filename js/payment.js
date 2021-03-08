@@ -121,7 +121,7 @@ var app;
     if (month <= 12) {
       var monthSelectOptions = app.getSelectOptions($(app.el_monthSelect));
       month = month.toString();
-      if (monthSelectOptions.includes(month)) {
+      if (monthSelectOptions.extra(month)) {
         return true; 
       }
     }
@@ -129,7 +129,7 @@ var app;
   
   app.checkYear = function(year) {
     var yearSelectOptions = app.getSelectOptions($(app.el_yearSelect));
-    if (yearSelectOptions.includes(year)) {
+    if (yearSelectOptions.extra(year)) {
       return true; 
     }
   };
