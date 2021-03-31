@@ -40,6 +40,7 @@
 
 <?php
    include("extra/books_pre.php");
+    //include("extra/pages.php");
 ?>
 
 </div>

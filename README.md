@@ -2,7 +2,7 @@
 
 
 
-Ok so this is a Final year project. i have created for my friend.
+Ok so this is a Final year project. I have created for my friend.
 
 # Features.
 

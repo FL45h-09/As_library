@@ -21,6 +21,7 @@
 
     <!-- Body starts here... -->
     <section class="text-gray-700 body-font overflow-hidden">
+    <form method="POST" action="/extra/sub_varify.php">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Subscription Plans</h1>
@@ -37,7 +38,7 @@
             <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
               <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                 <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
-                <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free<span class="text-lg ml-1 font-normal text-gray-500"> for 1 month</span>
+                <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free<span class="text-lg ml-1 font-normal text-gray-500"> for 3 month</span>
                 </h1>
                 <p class="flex items-center text-gray-600 mb-2">
                   <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
@@ -101,7 +102,7 @@
                 </span>Single device login.
               </p>
 
-              <button class="flex items-center mt-auto text-white bg-blue-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 rounded">Subscribe
+              <button name="38" class="flex items-center mt-auto text-white bg-blue-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 rounded">Subscribe
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
@@ -147,7 +148,7 @@
                 </span>You can get acess to exclusive book.
               </p>
 
-              <button class="flex items-center mt-auto text-white bg-gray-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-600 rounded">Subscribe
+              <button name="56" class="flex items-center mt-auto text-white bg-gray-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-600 rounded">Subscribe
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
@@ -199,7 +200,7 @@
                   </svg>
                 </span>You will get hard copy of any two books of you choice. 
               </p>
-              <button class="flex items-center mt-auto text-white bg-gray-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-600 rounded">Subscribe
+              <button name="72" class="flex items-center mt-auto text-white bg-gray-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-600 rounded">Subscribe
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
@@ -209,6 +210,7 @@
           </div>
         </div>
       </div>
+    </form>
     </section>
 
 
