@@ -1,6 +1,3 @@
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-<link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
-
 <?php
 $x = rand(1, 5);
 if ($x == 5) { ?>

@@ -9,21 +9,27 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<!-- Toggle Menu CSS -->
-	<link rel="stylesheet" href="/css/style.css">
 
-	<title>Library</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<title>Library | Profile</title>
 	<script src="/js/main.js"></script>
 </head>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
 
+<body>
+	<!-- Header starts here... -->
 	<?php
 	include("extra/header.php");
 	include("extra/personal_info.php");
 	if (isset($_SESSION["user_n"])) {
 	?>
 
-		<div class="mx-10 sm:mt-10 sm:mb-10 lg:mt-20 lg:mb-20 rounded-lg lg:rounded-l-lg shadow-2xl border">
+		<!-- Body starts here... -->
+
+		</br>
+
+
+		<div class="mx-10 sm:mt-0 mt-20 mb-20 rounded-lg lg:rounded-l-lg shadow-2xl border">
 			<div class="px-10 md:grid md:grid-cols-3 md:gap-6">
 				<!--Left side starts here-->
 				<div class="md:col-span-1">
@@ -35,31 +41,26 @@
 					</div>
 				</div>
 
-				<!--Right side starts here-->
-
-				<div class="md:mt-0 md:col-span-2">
-					<div class=" overflow-hidden sm:rounded-md">
-						<div class="px-4 py-5 bg-white sm:p-6">
-
-							<h1 class="text-3xl text-blue-500 font-bold pt-8 lg:pt-0"> <?php echo $dbfname . " " . $dblname; ?></h1>
-							<div class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25"></div>
-							<?php include("extra/profile_info.php"); ?>
-
+				<!-- Right   side starts here-->
+				<div class="mt-10 md:mt-0 md:col-span-2">
+						<h1 class="text-3xl text-blue-500 font-bold pt-8 lg:pt-0">
+							<?php echo $dbfname . " " . $dblname; ?>
+						</h1>
+						<div class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25">
 						</div>
-					</div>
+						<?php include("extra/profile_info.php"); ?>
 				</div>
 			</div>
 		</div>
-		</div>
-		</div>
 
-		<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-		<script src="https://unpkg.com/tippy.js@4"></script>
+
+		<!-- Footer starts here... -->
 
 	<?php
 		include("extra/footer.php");
 	} else header("Location:/login.php");
 	?>
+
 </body>
 
 </html>

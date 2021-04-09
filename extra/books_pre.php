@@ -42,9 +42,11 @@
                <h2 class="text-gray-900 title-font text-lg font-medium"><?php echo $BName ?></h2>
 
               </div>
+              <?php include("extra/review_stars.php"); ?>
             </div>
+
             <!--Php loop ends here-->
-        <?php } 
+        <?php }
         }else{
         for ($i = 0; $i < $count - 2; $i++) {
           $id = $arr[$i];
@@ -65,7 +67,7 @@
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Name</h3>
             <h2 class="text-gray-900 title-font text-lg font-medium"><?php echo $BName ?></h2>
-
+            <?php include("extra/review_stars.php") ?>
           </div>
         </div>
         <!--Php loop ends here-->

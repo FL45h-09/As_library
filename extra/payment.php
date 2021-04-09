@@ -44,6 +44,8 @@ include('SqlCon.php');
             unset($_SESSION["card_n"]);
             unset($_SESSION["card_v"]);
             unset($_SESSION["card_d"]);
+            unset($_SESSION["card_tax"]);
+            unset($_SESSION["card_total"]);
             
             header("Location:/index.php");
             } else{

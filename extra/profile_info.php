@@ -1,212 +1,116 @@
 <div class="py-4 rounded">
     <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-2 overflow-x-auto rounded">
         <div class="inline-block min-w-full shadow-lg rounded-lg overflow-hidden">
-            <table class="min-w-full leading-normal">
-                <thead>
-                    <tr>
-                        <th class="px-5 py-3 border-b-2 border-gray-200 bg-blue-500 text-left text-ms font-semibold text-gray-300 uppercase tracking-wider">
-                            Profile
-                        </th>
-                        <th class="px-5 py-3 border-b-2 border-gray-200 bg-blue-500 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+            <div class="min-w-full leading-normal">
+                <div>
 
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="px-5 py-3 border-b border-gray-200 bg-white text-sm">
-                            <div class="flex items-center">
+                    <div class="px-5 py-3 border-b-2 border-gray-200 bg-blue-500 text-left text-ms font-semibold text-gray-300 uppercase tracking-wider"> Profile </div>
 
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        Full Name
-                                    </p>
-                                </div>
+                </div>
+
+                <div class=" overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-white sm:p-6">
+                        <div class="grid grid-cols-6 gap-6">
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">Full Name :</label>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 border-b border-gray-200 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbfname . " " . $dblname; ?></p>
-                        </td>
 
-                    </tr>
-                    <tr>
-                        <td class="px-5 py-3 border-b border-gray-200 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        User Id
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbfname . " " . $dblname; ?></p>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 border-b border-gray-200 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbusr; ?></p>
-                        </td>
 
-                    </tr>
-                    <tr>
-                        <td class="px-5 py-3 border-b border-gray-200 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        Email
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">User ID :</label>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 border-b border-gray-200 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbmail; ?></p>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        Contact
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbusr; ?></p>
+                                </select>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbNo; ?></p>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        Date Of Birth
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">Email ID :</label>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $for_DoB; ?></p>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        Street
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbmail; ?></p>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbstreet; ?></p>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        City
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">Contact :</label>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbcity; ?></p>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        State
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbNo; ?></p>
+                                </select>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbstate; ?></p>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        Country
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">Date Of Birth :</label>
                             </div>
-                        </td>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbcountry; ?></p>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-3 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        Pincode/Zip
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $for_DoB; ?></p>
                             </div>
-                        </td>
-                        <td class="px-5 py-5 bg-white text-sm">
-                            <p class="text-gray-900 whitespace-no-wrap">: <?php echo $dbZip; ?></p>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-5 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-                                    <p class="text-gray-900 whitespace-no-wrap">
-
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">Street :</label>
                             </div>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td class="px-5 py-6 bg-white text-sm">
-                            <div class="flex items-center">
-
-                                <div class="ml-3">
-
-                                    <p class="text-gray-900 whitespace-no-wrap">
-                                        <button onclick="editProfile()" id="edit" class="bg-indigo-600 shadow-sm hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded-full">
-                                            Edit Profile
-                                        </button>
-                                    </p>
-                                </div>
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbstreet; ?></p>
+                                </select>
                             </div>
-                        </td>
-                        <td class="px-5 py-5 bg-white text-sm">
-                            <!-- Blank field for formating-->
-                        </td>
-                    </tr>
 
-                </tbody>
-            </table>
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">City :</label>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbcity; ?></p>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">State :</label>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbstate; ?></p>
+                                </select>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">Country :</label>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbcountry; ?></p>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="first_name" class="bg-white text-sm">Pincode / Zip :</label>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <p class="text-gray-700 whitespace-no-wrap"><?php echo $dbZip; ?></p>
+                                </select>
+                            </div>
+                            <div class="flex items-center col-span-6 sm:col-span-3">
+                                <p class="text-gray-900 whitespace-no-wrap">
+                                    </br>
+                                    </br>
+                                    </br>
+                                    <button onclick="editProfile()" id="edit" class="bg-indigo-600 shadow-sm hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded-full">Edit Profile</button>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

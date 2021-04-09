@@ -54,7 +54,7 @@ window.onclick = function (event) {
 
       <div id="myDropdown" class="dropdown-content">
       <a href="/profile.php" class="mr-5 hover:text-gray-900">Profile</a>
-      <a href="/subscription.php" class="mr-5 hover:text-gray-900">Subscription</a>
+      <a href="/history.php" class="mr-5 hover:text-gray-900">History</a>
       <a href="/change_pass.php" class="mr-5 hover:text-gray-900">Change Password</a>
       <a href="/logout.php" class="mr-5 hover:text-gray-900">Log Out</a>
       </div>

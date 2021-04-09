@@ -10,9 +10,11 @@
   <!-- Toggle Menu CSS -->
 
   <link rel="stylesheet" href="/css/style.css">
-  <title>Library|Profile</title>
+  <title>Library | Profile</title>
 </head>
 
+
+<body>
 <!-- Header starts here... -->
 <?php
 include("header.php");

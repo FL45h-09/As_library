@@ -33,7 +33,7 @@
           <?php
           include('extra/sessions.php');
 
-          if ($mod1 == 1) {
+          if ($freeCard == 1) {
           ?>
             <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
               <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
@@ -184,7 +184,7 @@
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                     <path d="M20 6L9 17l-5-5"></path>
                   </svg>
-                </span>multiple device login.
+                </span>Multiple device login.
               </p>
               <p class="flex items-center text-gray-600 mb-2">
                 <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
@@ -198,7 +198,7 @@
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                     <path d="M20 6L9 17l-5-5"></path>
                   </svg>
-                </span>You will get hard copy of any two books of you choice. 
+                </span>You will get hard copy of any two books of you choice.
               </p>
               <button name="72" class="flex items-center mt-auto text-white bg-gray-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-600 rounded">Subscribe
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
